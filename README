@@ -2,7 +2,7 @@ NAME
     Net::Cisco::ObjectGroup - Generate Cisco ACL object groups
 
 VERSION
-    This document refers to version 0.03 of Net::Cisco::ObjectGroup.
+    This document refers to version 0.04 of Net::Cisco::ObjectGroup.
 
 SYNOPSIS
      use Net::Cisco::ObjectGroup;

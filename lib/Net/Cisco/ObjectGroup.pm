@@ -3,7 +3,7 @@ package Net::Cisco::ObjectGroup;
 use strict;
 use warnings FATAL => qw(all);
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 use UNIVERSAL::require;
 use Carp;
@@ -53,7 +53,7 @@ Net::Cisco::ObjectGroup - Generate Cisco ACL object groups
 
 =head1 VERSION
 
-This document refers to version 0.03 of Net::Cisco::ObjectGroup.
+This document refers to version 0.04 of Net::Cisco::ObjectGroup.
 
 =head1 SYNOPSIS
 

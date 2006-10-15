@@ -28,7 +28,7 @@ $og->push({group_object => $tmp_og});
 like( $og->dump, qr/\n  group-object referenced_group$/, 'push 3');
 
 $full_og = <<'OG';
-object-group icmp test_group
+object-group icmp-type test_group
   description THIS IS A TEST
   icmp-object echo
   icmp-object echo-reply

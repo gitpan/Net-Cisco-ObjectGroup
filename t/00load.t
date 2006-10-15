@@ -31,7 +31,7 @@ eval{ $og = $class->new({type => 'icmp', name => 'test_group'}) };
 isa_ok( $og, "$class\::ICMP", 'new object created' );
 
 can_ok( $og, 'dump' );
-is( $og->dump, 'object-group icmp test_group', 'dump empty group' );
+is( $og->dump, 'object-group icmp-type test_group', 'dump empty group' );
 
 eval{ $og = $class->new({type => 'icmp', name => 'test_group', description => 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}) };
 like( $@, qr/^bad description/, 'dies with bad description' );

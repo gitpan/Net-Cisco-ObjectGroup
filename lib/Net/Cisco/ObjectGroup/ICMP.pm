@@ -6,6 +6,16 @@ use warnings FATAL => qw(all);
 
 use Carp;
 
+sub _init {
+    my $self    = shift;
+    my $arg_ref = shift;
+
+    $self->set_type( 'icmp-type' );
+    $self->SUPER::_init( $arg_ref );
+
+    return $self;
+}
+
 sub push {
     my $self    = shift;
     my $arg_ref = shift;
